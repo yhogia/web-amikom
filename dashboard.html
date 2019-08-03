@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="js/admin.js">
+    <link rel="shortcut ico" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top p-3 pl-4" style="background-color: #482273;">
+        <img src="img/logo_full.png">
+        <a class="navbar-brand pl-4" href="Home.html" style="color: white;"><b>UNIVERSITAS AMIKOM YOGYAKARTA</b></a>
+
+        <div class="icon ml-4 ml-auto">
+            <h5>
+                <a class="btn bg-danger text-white" href="login.html" role="button"><b>KELUAR</b><i
+                        class="fas fa-sign-out-alt ml-3" data-toggle="tooltip" title="Keluar"></i>
+                </a>
+            </h5>
+        </div>
+    </nav>
+
+    <div class="row no-gutters mt-5">
+        <div class="col-md-2 bg-light mt-2 pr-3 pt-4 sidebar fac">
+            <img src="img/profil.jpg" class="img-thumbnail mx-auto d-block bg-dark">
+
+            <div class="text-center pt-3">
+                <h6 class="text-dark">YHOGI ALAWDI</h6>
+                <p class="text-dark">17.11.1715</p>
+            </div>
+
+            <button type="button" class="btn btn-warning mt-4 mx-auto d-block text-white pl-5 pr-5">Profil</button>
+
+            <ul class="nav flex-column ml-4 mb-5 mt-5">
+                <span class="border border-top border-secondary mb-3"></span>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="dashboard.html"><i
+                            class="fas fa-tachometer-alt mr-3"></i>Dashboard</a>
+                    <hr class="bg-secondary">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="far fa-envelope mr-3"></i>E-Mail</a>
+                    <hr class="bg-secondary">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-calendar-alt mr-3"></i>Kuliah</a>
+                    <hr class="bg-secondary">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-book mr-3"></i>Pendadaran</a>
+                    <hr class="bg-secondary">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-sticky-note mr-3"></i>Perpustakaan</a>
+                    <hr class="bg-secondary">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-receipt mr-3"></i>Pembayaran</a>
+                    <hr class="bg-secondary">
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-10 p-5 pt-2 fac">
+            <h3><i class="fas fa-tachometer-alt mr-3"></i>DASHBOARD MAHASISWA</h3>
+            <hr>
+            <div class="row text-white">
+                <div class="card ml-3" style="width: 18rem; background-color: #482273;">
+                    <div class="card-body">
+                        <div class="card-body-icon"><i class="fas fa-check-square mr-3"></i></div>
+                        <h5 class="card-title">STATUS MAHASISWA</h5>
+                        <div class="display-4 font-weight-bold">Aktif</div>
+                    </div>
+                </div>
+
+                <div class="card ml-5" style="width: 18rem; background-color: #482273;">
+                    <div class="card-body">
+                        <div class="card-body-icon"><i class="fas fa-chalkboard-teacher mr-3"></i></div>
+                        <h5 class="card-title">IPK</h5>
+                        <div class="display-4 font-weight-bold">4.0</div>
+                    </div>
+                </div>
+
+                <div class="card ml-5" style="width: 18rem; background-color: #482273;">
+                    <div class="card-body">
+                        <div class="card-body-icon"></div>
+                        <h5 class="card-title">KRS</h5>
+                        <p>Semester Genap TA. 2018/2019</p>
+                        <a class="btn btn-warning text-white" href="#" role="button">Lihat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jadwal mt-5">
+                <section id="tabs" class="project-tab">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav>
+                                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                            href="#nav-home" role="tab" aria-controls="nav-home"
+                                            aria-selected="true">Jadwal
+                                            Kuliah</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                            href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                            aria-selected="false">Jadwal Ujian</a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                            href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">Virtual Account</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <table class="table bg-light">
+                                            <thead class="">
+                                                <tr>
+                                                    <th scope="col" id="kuliah">NO.</th>
+                                                    <th scope="col">HARI</th>
+                                                    <th scope="col">JAM</th>
+                                                    <th scope="col">RUANG</th>
+                                                    <th scope="col">MATA KULIAH</th>
+                                                    <th scope="col">DOSEN PENGAMPU</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="jadwalKuliah">
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>SELASA</td>
+                                                    <td>07.00 - 08.40</td>
+                                                    <td>04.02.05</td>
+                                                    <td>PEMROGRAMAN WEB (Teori)</td>
+                                                    <td>Firman Asharudin, S.Kom, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>SELASA</td>
+                                                    <td>08.50 - 10.30</td>
+                                                    <td>05.04.08</td>
+                                                    <td>PEMROGRAMAN BASIS DATA (Teori)</td>
+                                                    <td>Kamarudin, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>SELASA</td>
+                                                    <td>15.30 - 17.10</td>
+                                                    <td>L 2.4.1</td>
+                                                    <td>PEMROGRAMAN WEB (Praktikum)</td>
+                                                    <td>Firman Asharudin, S.Kom, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>RABU</td>
+                                                    <td>07.00 - 08.40</td>
+                                                    <td>05.04.03</td>
+                                                    <td>STATISTIK (Teori)</td>
+                                                    <td>Ikmah, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>RABU</td>
+                                                    <td>07.00 - 08.40</td>
+                                                    <td>L 7.3.1</td>
+                                                    <td>STATISTIK (Praktikum)
+                                                        <p><em>Dilaksanakan setelah UTS</em></p>
+                                                    </td>
+                                                    <td>Ikmah, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>RABU</td>
+                                                    <td>08.50 - 10.30</td>
+                                                    <td>L 2.4.2</td>
+                                                    <td>PEMROGRAMAN BASIS DATA (Praktikum)</td>
+                                                    <td>Kamarudin, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>KAMIS</td>
+                                                    <td>07.00 - 08.40</td>
+                                                    <td>05.04.01</td>
+                                                    <td>KECAKAPAN ANTAR PERSONAL (Teori)</td>
+                                                    <td>Nuraini, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>KAMIS</td>
+                                                    <td>08.50 - 10.30 </td>
+                                                    <td>07.02.01</td>
+                                                    <td>RISET OPERASI (Teori)</td>
+                                                    <td>Lia Ayu Ivanjelita, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>KAMIS</td>
+                                                    <td>10.40 - 12.20</td>
+                                                    <td>05.02.02</td>
+                                                    <td>SISTEM BERKAS DAN KEAMANAN DATA (Teori)</td>
+                                                    <td>Dwi Nurani, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>JUMAT</td>
+                                                    <td>07.00 - 08.40 </td>
+                                                    <td>05.02.06</td>
+                                                    <td>ANALISIS DAN DESAIN SISTEM INFORMASI (Teori)</td>
+                                                    <td>Rifda Faticha Alfa Aziza, S.Kom., M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>JUMAT</td>
+                                                    <td>08.50 - 10.30 </td>
+                                                    <td>05.04.07</td>
+                                                    <td>KEPEMIMPINAN (Teori)</td>
+                                                    <td>Yusuf Amri Amrullah, SE, MM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>JUMAT</td>
+                                                    <td>13.20 - 15.00</td>
+                                                    <td>05.04.08</td>
+                                                    <td>STATISTIK (Teori)</td>
+                                                    <td>Ikmah, M.Kom</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>JUMAT</td>
+                                                    <td>15.30 - 17.10</td>
+                                                    <td>05.02.03</td>
+                                                    <td>SISTEM INFORMASI MANAJEMEN (Teori)</td>
+                                                    <td>Subektiningsih, M.Kom</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                        aria-labelledby="nav-profile-tab">
+                                        <table class="table bg-light">
+                                            <thead class="">
+                                                <tr>
+                                                    <th>NO.</th>
+                                                    <th>TANGGAL UJIAN</th>
+                                                    <th>JAM</th>
+                                                    <th>RUANG</th>
+                                                    <th>MATA KULIAH</th>
+                                                    <th>KURSI</th>
+                                                    <th>HADIR?</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="jadwalUjian">
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>22-04-2019</td>
+                                                    <td>10.30</td>
+                                                    <td>04.04.04</td>
+                                                    <td>PEMROGRAMAN BASIS DATA</td>
+                                                    <td>1</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>22-04-2019</td>
+                                                    <td>15.00</td>
+                                                    <td>05.02.07</td>
+                                                    <td>RISET OPERASI</td>
+                                                    <td>20</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>23-04-2019</td>
+                                                    <td>15.00</td>
+                                                    <td>05.02.07</td>
+                                                    <td>STATISTIK</td>
+                                                    <td>19</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>24-04-2019</td>
+                                                    <td>13.00</td>
+                                                    <td>05.02.07</td>
+                                                    <td>ANALISIS DAN DESAIN SISTEM INFORMASI)</td>
+                                                    <td>20</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>25-04-2019</td>
+                                                    <td>13.00</td>
+                                                    <td>05.04.03</td>
+                                                    <td>SISTEM INFORMASI MANAJEMEN</td>
+                                                    <td>18</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>30-04-2019</td>
+                                                    <td>08.30</td>
+                                                    <td>05.02.07</td>
+                                                    <td>SISTEM BERKAS DAN KEAMANAN DATA</td>
+                                                    <td>19</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>30-04-2019</td>
+                                                    <td>10.00</td>
+                                                    <td>05.04.04</td>
+                                                    <td>KECAKAPAN ANTAR PERSONAL</td>
+                                                    <td>20</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>02-05-2019S</td>
+                                                    <td>11.30</td>
+                                                    <td>05.02.07</td>
+                                                    <td>KEPEMIMPINAN</td>
+                                                    <td>16</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>PEMROGRAMAN WEB (Ujian Mandiri)</td>
+                                                    <td>794</td>
+                                                    <td>YA</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <table class="table" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>NO.</th>
+                                                    <th>ITEM PEMBAYARAN</th>
+                                                    <th>NO. VIRTUAL ACCOUNT</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>SPP Tetap</td>
+                                                    <td>7575 01 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>SPP Variabel</td>
+                                                    <td>7575 02 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Biaya Sarana dan Prasarana</td>
+                                                    <td>7575 03 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Biaya Perkuliahan Perbaikan</td>
+                                                    <td>7575 04 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Herregistrasi Tinggal Pendadaran</td>
+                                                    <td>7575 05 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Herregistrasi Tinggal Wisuda</td>
+                                                    <td>7575 06 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Cuti</td>
+                                                    <td>7575 07 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Biaya Wisuda</td>
+                                                    <td>7575 08 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Biaya Pendukung</td>
+                                                    <td>7575 11 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Dicutikan</td>
+                                                    <td>7575 12 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>Pengunduran Diri</td>
+                                                    <td>7575 13 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>Pendadaran</td>
+                                                    <td>7575 14 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>Ujian Susulan</td>
+                                                    <td>7575 15 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>Biaya Salinan Kwitansi</td>
+                                                    <td>7575 20 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>Biaya Lupa Password</td>
+                                                    <td>7575 21 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>Biaya Cetak KTM Rusak</td>
+                                                    <td>7575 22 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td> Biaya KTM Hilang</td>
+                                                    <td>7575 30 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td> Biaya Legalisir</td>
+                                                    <td>7575 26 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>Tunggakan</td>
+                                                    <td>7575 25 00 17111715</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>Study visit kelas internasional</td>
+                                                    <td>7575 31 00 17111715</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="text-center mt-5">Copyright © 1994 - 2019 UNIVERSITAS AMIKOM YOGYAKARTA.</footer>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

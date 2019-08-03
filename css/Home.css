@@ -1,0 +1,186 @@
+body {
+    margin-top: 48px;
+}
+
+.utama {
+    background-color: #482273;
+}
+
+.utama ul li a:hover {
+    color: orange;
+}
+
+.utama .navbar-toggler a:hover {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.dua {
+    background-color: #482273;
+    opacity: .8;
+}
+
+.dua ul li a:hover {
+    color: orange;
+}
+
+.pmb {
+    margin-top: 30px;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 0px 20px 0px;
+}
+
+.menu1 {
+    padding-bottom: 20px;
+}
+
+.menu4 {
+    height: 500px;
+    background-color: purple;
+    color: white;
+    padding: 30px 30px 0 30px;
+    text-align: center;
+}
+
+.menu5 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    height: 350px;
+    border-right: solid #707070;
+    border-bottom: solid #707070;
+}
+
+.box4 {
+    border-right: 0px;
+}
+
+.info-kampus {
+    height: 600px;
+}
+
+.baca a {
+    color: #482273;
+}
+
+.baca a:hover {
+    color: orange;
+}
+
+.e-learning {
+    height: 500px;
+}
+
+.e-learning .container .row .col-sm-4 .card .row .col-md-4 .bg-dark {
+    width: 60px;
+    height: 60px;
+    margin: 25px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.e-learning .container .row .col-sm-4 .card .row .col-md-8 .card-body .card-text p:hover {
+    color: orange;
+}
+
+.instagram {
+    height: 700px;
+}
+
+.instagram .container {
+    margin-top: 50px;
+}
+
+.konten .card:hover {
+    box-shadow: 7px 7px 6px rgba(0, 0, 0, .50);
+    transform: scale(1.04);
+    transition: .8s;
+}
+
+.info {
+    font-weight: 100;
+}
+
+.hover a {
+    color: orange;
+}
+
+footer {
+    background-color: #482373;
+}
+
+.list li {
+    padding-bottom: 15px;
+}
+
+.list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.list li a:hover {
+    color: orange;
+}
+
+.copyright {
+    background-color: #482273;
+    opacity: .8;
+}
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+    text-align: center;
+    padding: 5px;
+    background: #f1f1f1;
+    color: #666;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+    left: 0;
+}
+
+.MultiCarousel .rightLst {
+    right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+    pointer-events: none;
+    background: #ccc;
+}

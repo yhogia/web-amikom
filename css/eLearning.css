@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('alexbrush-regular-webfont.woff2') format('woff2'),
+        url('alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-link {
+    color: white;
+}
+
+body {
+    font-family: "alex_brushregular";
+    background-color: #cce0fb;
+}
+
+.nav-top {
+    height: 100px;
+    background-color: #482273;
+    background-repeat: no-repeat;
+    background-position-y: -30px;
+    background-position-x: 1168px;
+    background-size: 150px;
+    color: white;
+}
+
+.nav-top img {
+    width: 50px;
+    height: 50px;
+}
+
+.judul {
+    margin-left: 30px;
+}
+
+.menu-satu {
+    background-color: rgb(30, 0, 54);
+    margin-bottom: -60px;
+}
+
+.menu-satu li a:hover {
+    color: red;
+    background-color: orange;
+}
+
+.list li a {
+    color: black;
+    text-decoration: none;
+}
+
+.list li a:hover {
+    background-color: #e7f1ff;
+}
+
+.progress {
+    position: relative;
+    height: 25px;
+}
+
+.progress .progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 800;
+    padding: 3px 30px 2px 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress .progress-completed {
+    position: absolute;
+    right: 0px;
+    font-weight: 800;
+    padding: 3px 10px 2px;
+}
+
+footer {
+    margin-top: 200px;
+    color: white;
+    background-color: #482273;
+}

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('alexbrush-regular-webfont.woff2') format('woff2'),
+        url('alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-link {
+    color: white;
+}
+
+body {
+    font-family: "alex_brushregular";
+    background-color: #cce0fb;
+}
+
+.nav-top {
+    height: 100px;
+    background-color: #482273;
+    background-image: url(../img/gedung-7.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -30px;
+    background-position-x: 1168px;
+    background-size: 150px;
+    color: white;
+}
+
+.nav-top img {
+    width: 50px;
+    height: 50px;
+}
+
+.judul {
+    margin-left: 30px;
+}
+
+.menu-satu {
+    background-color: rgb(30, 0, 54);
+    margin-bottom: -60px;
+}
+
+.register {
+    color: white;
+}
+
+.register div a {
+    text-decoration: none;
+    color: white
+}
+
+.register div a:hover {
+    height: 50px;
+    background-color: yellow;
+}
+
+.alamat-kampus {
+    margin-top: 150px;
+}
+
+.gambar-alamat a img {
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, .50);
+}
+
+.gambar-alamat a img:hover {
+    background-color: red;
+}
+
+.gambar-alamat {
+    position: relative;
+}
+
+.gambar-alamat span {
+    display: block;
+    width: 300px;
+    height: 400px;
+    color: white;
+    background-color: rgba(255, 127, 0, .9);
+    position: absolute;
+    top: 0;
+    left: 262px;
+    text-align: center;
+    padding-top: 100px;
+    text-shadow: 2px 2px 2px black;
+    opacity: 0;
+    transition: .5s;
+    transform: scale(0);
+}
+
+.gambar-alamat a:hover span {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.gambar-sosmed {
+    margin-top: 100px;
+    margin-left: -15px;
+    height: 260px;
+}
+
+.kontak {
+    margin-top: 150px;
+    margin-left: -15px;
+}
+
+.menu-satu li a:hover {
+    color: red;
+    background-color: #ffc107;
+}
+
+.sidebar {
+    background-color: #482273;
+    height: 500px;
+}
+
+.sidebar ul li i {
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    border-left: dashed maroon 5px;
+    background-color: goldenrod;
+}
+
+footer {
+    margin-top: 200px;
+    color: white;
+    background-color: #482273;
+}
+
+footer img {
+    background-color: #482273;
+    padding: 6px;
+    width: 50px;
+    margin-top: -40px;
+    margin-left: 655px;
+    text-align: center;
+}
